@@ -3,43 +3,46 @@
   <head>
     <meta charset="UTF-8">
     <title>Гостиницы | Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
       <nav class="navigation">
         <ul class="navigation-list">
-          <li class="navigation-link">
+          <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
           </li>
-          <li class="navigation-link">
+          <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
-          <li class="navigation-link">
+          <li class="navigation-item">
             <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
 
         <div class="sedona-logo">
-        <img src="https://via.placeholder.com/100x100" alt="Логотип города Седона">
+        <img src="images/sedona.svg" width="138" height="70" alt="Логотип города Седона">
         </div>
 
         <ul class="navigation-list navigation-user">
-          <li class="navigation-link">
-            <a class="navigation-link" href="#">
+          <li class="navigation-item">
+            <a class="navigation-user-link" href="#">
               <span class="visually-hidden">
                 Поиск
               </span>
+              <img src="images/search.svg" width="18" height="18">
             </a>
           </li>
-          <li class="navigation-link">
-            <a class="navigation-link" href="#">
+          <li class="navigation-item">
+            <a class="navigation-user-link" href="#">
               <span class="visually-hidden">
                 Избранное
               </span>
+              <img src="images/favourite.svg" width="31" height="27">
             </a>
           </li>
-          <li class="navigation-link">
-            <a class="navigation-link" href="#">Хочу сюда!</a>
+          <li class="navigation-item">
+            <a class="button button-brown" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -54,6 +57,7 @@
               <span class="visually-hidden">
                 Главная
               </span>
+              <img src="images/home.svg" width="12" height="12">
             </a>
           </li>
           <li class="breadcrumbs-item">
@@ -155,15 +159,27 @@
               <option value="popular">Сначала популярные</option>
             </select>
           </form>
-          <a class="button" href="#">
-            <span class="visually-hidden">Показать карточки</span>
-          </a>
-          <a class="button" href="#">
-            <span class="visually-hidden">Показать список с описаниями</span>
-          </a>
-          <a class="button button-current" href="#">
-            <span class="visually-hidden">Показать список</span>
-          </a>
+
+          <ul class="mode">
+            <li class="mode-item">
+              <a class="button-mode" type="button">
+                <span class="visually-hidden">Показать карточки</span>
+                <img src="images/mode-tile.svg" width="16" height="14">
+              </a>
+            </li>
+            <li class="mode-item">
+              <a class="button-mode" type="button">
+                <span class="visually-hidden">Показать список с описаниями</span>
+                <img src="images/mode-slideshow.svg" width="16" height="14">
+              </a>
+            </li>
+            <li class="mode-item">
+              <a class="button-mode button-current" type="button">
+                <span class="visually-hidden">Показать список</span>
+                <img src="images/mode-list.svg" width="16" height="14">
+              </a>
+            </li>
+          </ul>
         </div>
 
         <section class="catalog">
@@ -172,7 +188,7 @@
             <li class="catalog-item">
               <article class="product">
                 <div class="hotel-photo">
-                  <img src="https://via.placeholder.com/100x100" alt="Гостиница">
+                  <img src="images/hotel-1.jpg" width="180" height="120" alt="Гостиница">
                 </div>
                 <h3 class="hotel-name">Amara Resort & Spa</h3>
                 <div class="hotel-about">
@@ -180,13 +196,12 @@
                   <span class="price">От 4000 ₽</span>
                 </div>
                 <div class="hotel-options">
-                  <a class="hotel-link" href="#">подробнее</a>
-                  <button class="button button-blue" type="button">В избранное</button>
+                  <a class="button button-brown" href="#">подробнее</a>
+                  <button class="button" type="button">В избранное</button>
                 </div>
-                <div class="hotel-rating">
-                  <img class="star-four" src="https://via.placeholder.com/15x15" alt="Звезда">
+                <div class="hotel-rate-four">
                   <span class="visually-hidden">Четыре звезды</span>
-                  <p>Рейтинг: 8,5</p>
+                  <p class="rating">Рейтинг: 8,5</p>
                 </div>
               </article>
             </li>
@@ -194,7 +209,7 @@
             <li class="catalog-item">
               <article class="product">
                 <div class="hotel-photo">
-                  <img src="https://via.placeholder.com/100x100" alt="Гостиница">
+                  <img src="images/hotel-2.jpg" width="180" height="120" alt="Гостиница">
                 </div>
                 <h3 class="hotel-name">Desert Quail Inn</h3>
                 <div class="hotel-about">
@@ -202,13 +217,12 @@
                   <span class="price">От 3000 ₽</span>
                 </div>
                 <div class="hotel-options">
-                  <a class="hotel-link" href="#">подробнее</a>
-                  <button class="button button-blue" type="button">В избранное</button>
+                  <a class="button button-brown" href="#">подробнее</a>
+                  <button class="button" type="button">В избранное</button>
                 </div>
-                <div class="hotel-rating">
-                  <img class="star-three" src="https://via.placeholder.com/15x15" alt="Звезда">
+                <div class="hotel-rate-three">
                   <span class="visually-hidden">Три звезды</span>
-                  <p>Рейтинг: 8,9</p>
+                  <p class="rating">Рейтинг: 8,9</p>
                 </div>
               </article>
             </li>
@@ -216,7 +230,7 @@
             <li class="catalog-item">
               <article class="product">
                 <div class="hotel-photo">
-                  <img src="https://via.placeholder.com/100x100" alt="Гостиница">
+                  <img src="images/hotel-3.jpg" width="180" height="120" alt="Гостиница">
                 </div>
                 <h3 class="hotel-name">Villas at Poco Diablo</h3>
                 <div class="hotel-about">
@@ -224,13 +238,12 @@
                   <span class="price">От 2000 ₽</span>
                 </div>
                 <div class="hotel-options">
-                  <a class="hotel-link" href="#">подробнее</a>
+                  <a class="button button-brown" href="#">подробнее</a>
                   <button class="button button-green" type="button">В избранном</button>
                 </div>
-                <div class="hotel-rating">
-                  <img class="star-two" src="https://via.placeholder.com/15x15" alt="Звезда">
+                <div class="hotel-rate-two">
                   <span class="visually-hidden">Две звезды</span>
-                  <p>Рейтинг: 9,2</p>
+                  <p class="rating">Рейтинг: 9,2</p>
                 </div>
               </article>
             </li>
@@ -238,7 +251,7 @@
             <li class="catalog-item">
               <article class="product">
                 <div class="hotel-photo">
-                  <img src="https://via.placeholder.com/100x100" alt="Гостиница">
+                  <img src="images/hotel-4.jpg" width="180" height="120" alt="Гостиница">
                 </div>
                 <h3 class="hotel-name">GreenTree Inn</h3>
                 <div class="hotel-about">
@@ -246,13 +259,12 @@
                   <span class="price">От 3000 ₽</span>
                 </div>
                 <div class="hotel-options">
-                  <a class="hotel-link" href="#">подробнее</a>
-                  <button class="button button-blue" type="button">В избранное</button>
+                  <a class="button button-brown" href="#">подробнее</a>
+                  <button class="button" type="button">В избранное</button>
                 </div>
-                <div class="hotel-rating">
-                  <img class="star-two" src="https://via.placeholder.com/15x15" alt="Звезда">
+                <div class="hotel-rate-two">
                   <span class="visually-hidden">Две звезды</span>
-                  <p>Рейтинг: 9,2</p>
+                  <p class="rating">Рейтинг: 9,2</p>
                 </div>
               </article>
             </li>
@@ -263,22 +275,22 @@
 
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link pagination-current" href="#">1</a>
+            <a class="pagination-link button pagination-current" href="#">1</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
+            <a class="pagination-link button" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
+            <a class="pagination-link button" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
+            <a class="pagination-link button" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
+            <a class="pagination-link button" href="#">...</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">10</a>
+            <a class="pagination-link button" href="#">10</a>
           </li>
         </ul>
 
@@ -293,13 +305,13 @@
       </section>
 
       <div class="subscription">
-        <p class="title-white">Подпишитесь на рассылку</p>
-        <p class="description-white">Только полезная информация и никакого спама,
+        <p class="title">Подпишитесь на рассылку</p>
+        <p class="description">Только полезная информация и никакого спама,
           честное бойскаутское!</p>
         <form class="form-subscription" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="sub-email">E-mail</label>
           <input class="text" type="email" placeholder="Ваш e-mail" name="email" id="sub-email">
-          <button class="button button-blue" type="submit">Подписаться</button>
+          <button class="button button-subscription" type="submit">Подписаться</button>
         </form>
       </div>
     </main>
@@ -311,28 +323,31 @@
           <li class="footer-social-item">
             <a class="link-social" href="https://twitter.com/htmlacademy_ru">
               <span class="visually-hidden">Twitter</span>
+              <img src="images/twitter.svg" width="18" height="15" alt="Логотип Твиттера">
             </a>
           </li>
           <li class="footer-social-item">
             <a class="link-social" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Facebook</span>
+              <img src="images/facebook.svg" width="10" height="18" alt="Логотип Фейсбука">
             </a>
           </li>
           <li class="footer-social-item">
             <a class="link-social" href="https://www.youtube.com/c/HTMLAcademyRUS">
               <span class="visually-hidden">Youtube</span>
+              <img src="images/youtube.svg" width="20" height="16" alt="Логотип Ютуба">
             </a>
           </li>
         </ul>
       </section>
 
-      <div class="phone-number">
+      <address class="phone-number">
         <a href="tel:+78128121212">+7 (812) 812-12-12</a>
-      </div>
+      </address>
 
       <div class="about-logo">
         <a href="https://htmlacademy.ru/">
-          <img class="logo-htmlacademy" src="https://via.placeholder.com/100x100" alt="Логотип html academy">
+          <img class="logo-htmlacademy" src="images/htmlacademylogo.svg" width="115" height="33" alt="Логотип html academy">
         </a>
       </div>
     </footer>
