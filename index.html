@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <div class="wrapper">
+    <div class="container">
       <header class="page-header">
         <nav class="navigation">
           <ul class="reset-list navigation-list">
@@ -42,7 +42,7 @@
                 <img src="images/svg/favourite.svg" width="31" height="27">
               </a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item-button">
               <a class="button button-brown" href="#">Хочу сюда!</a>
             </li>
           </ul>
@@ -63,13 +63,15 @@
 
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
-          <div class="advantages-list dark-blue">
-            <section class="advantages">
-            <h3 class="advantages-title-white">Настоящий городок</h3>
-            <p class="advantages-description-white">— №1 —</p>
-            <p class="advantages-description-white">Седона — не аттракцион для туристов, там течёт
-              своя жизнь</p>
-            </section>
+          <div class="advantages-row">
+            <div class="advantages-item">
+              <section class="advantages">
+              <h3 class="advantages-title-white">Настоящий городок</h3>
+              <p class="advantages-description-white">— №1 —</p>
+              <p class="advantages-description-white">Седона — не аттракцион для туристов, там течёт
+                своя жизнь</p>
+              </section>
+            </div>
             <div class="photo-house">
               <img class="photo-view" src="images/photo-sedona-town.jpg" width="800" height="384" alt="Дом в городе">
             </div>
@@ -97,16 +99,18 @@
             </li>
           </ul>
 
-          <div class="advantages-list dark-blue">
+          <div class="advantages-row">
             <div class="photo-canyon">
               <img class="photo-view" src="images/photo-sedona-canyon.jpg" width="800" height="384" alt="Вид на каньон">
             </div>
-            <section class="advantages">
-              <h3 class="advantages-title-white">Там есть
-              мост дьявола</h3>
-              <p class="advantages-description-white">— №2 —</p>
-              <p class="advantages-description-white">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            </section>
+            <div class="advantages-item">
+              <section class="advantages">
+                <h3 class="advantages-title-white">Там есть
+                мост дьявола</h3>
+                <p class="advantages-description-white">— №2 —</p>
+                <p class="advantages-description-white">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              </section>
+            </div>
           </div>
 
           <ul class="reset-list advantages-list">
