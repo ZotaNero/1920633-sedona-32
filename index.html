@@ -41,6 +41,41 @@
                 </span>
                 <img src="images/svg/favourite.svg" width="31" height="27">
               </a>
+              <div class="popover popover-cart class-display">
+                <div class="popover-content">
+                  <ul class="reset-list popover-list">
+                    <li class="popover-item">
+                      <a class="popover-link" href="#">
+                        <img class="popover-image" src="images/hotel-small-desert.png" alt="Desert Quail Inn"
+                             width="48" height="48">
+                        <div class="popover-item-info">
+                          <h3 class="reset-list popover-item-title">Desert Quail Inn</h3>
+                          <span class="popover-hotel-type">Мотель</span>
+                        </div>
+                      </a>
+                      <button type="button" class="popover-button-delete">
+                        <img src="images/svg/bin.svg" width="16" height="16">
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                    <li class="popover-item">
+                      <a class="popover-link" href="#">
+                        <img class="popover-image" src="images/hotel-small-villas.png" alt="Villas at Poco Diablo"
+                             width="48" height="48">
+                        <div class="popover-item-info">
+                          <h3 class="reset-list popover-item-title">Villas at Poco Diablo</h3>
+                          <span class="popover-hotel-type">Апартаменты</span>
+                        </div>
+                      </a>
+                      <button type="button" class="popover-button-delete">
+                        <img src="images/svg/bin.svg" width="16" height="16">
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <button type="button" class="button button-brown button-popover">Все избранные</button>
+              </div>
             </li>
             <li class="navigation-item-button">
               <a class="button button-user" href="#">Хочу сюда!</a>
@@ -206,7 +241,7 @@
       </footer>
     </div>
 
-    <div class="modal-container visually-hidden">
+    <div class="modal-container class-display">
       <div class="modal modal-search">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <button class="modal-close-button">
@@ -230,19 +265,25 @@
                 <button class="field-group-button minus-button" type="button">
                   <span class="visually-hidden">убавить</span>
                 </button>
-                <input class="form-input number-input" id="number-adult" type="number" value="2" name="quantity-adult">
+                <input class="form-input number-input" id="number-adult" type="text" value="2" name="quantity-adult">
                 <button class="field-group-button plus-button" type="button">
                   <span class="visually-hidden">добавить</span>
                 </button>
               </div>
             </div>
             <div class="field-group">
-              <label class="form-label children-label" for="number-children">Дети:</label>
+              <div class="children-group">
+                <label class="form-label children-label" for="number-children">Дети:</label>
+                <button class="info" type="button">
+                  <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                  <span class="info-popover">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </button>
+              </div>
               <div class="number">
                 <button class="field-group-button minus-button" type="button">
                   <span class="visually-hidden">убавить</span>
                 </button>
-                <input class="form-input number-input" id="number-children" type="number" value="1" name="quantity-children">
+                <input class="form-input number-input" id="number-children" type="text" value="1" name="quantity-children">
                 <button class="field-group-button plus-button" type="button">
                   <span class="visually-hidden">добавить</span>
                 </button>
