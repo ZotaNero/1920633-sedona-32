@@ -241,7 +241,22 @@ body  {
   background-color: transparent;
   border: none;
   outline: none;
-  margin-top: 20px;
+  margin: 15px 20px 0 20px;
+  width: 100px;
+  padding: 4px 0 5px;
+}
+
+.button-reset:hover {
+  color: #FFFFFF60;
+}
+
+.button-reset:focus-visible {
+  box-shadow: 0 0 0 3px #83B3D3;
+  border-radius: 4px;
+}
+
+.button-reset:active  {
+  color: #FFFFFF30;
 }
 
 .button-show-more  {
@@ -1193,6 +1208,7 @@ body  {
 .control  {
   position: relative;
   display: block;
+  cursor: pointer;
 }
 
 .control-mark {
@@ -1206,20 +1222,18 @@ body  {
   border-radius: 4px;
 }
 
-/*
-
 .control-mark-checkbox:hover  {
   background: rgba(255, 255, 255, 0.6);
 }
-
+/*
 .control-mark-checkbox:focus-visible  {
   box-shadow: 0 0 0 3px #83B3D3;
 }
-
+*/
 .control-mark-checkbox:active {
   background: rgba(255, 255, 255, 0.3);
 }
-*/
+
 .control-mark-radio {
   border-radius: 50%;
 }
@@ -1227,9 +1241,7 @@ body  {
 .control-mark-radio:focus-visible {
   box-shadow: 0 0 0 3px #83B3D3;
 }
-
- */
-
+*/
 .control-label  {
   margin-left: 39px;
 }
@@ -1376,6 +1388,7 @@ body  {
 .catalog-filter-button  {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-top: 60px;
 }
 
@@ -1384,9 +1397,6 @@ body  {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 42px;
-}
-
-.form-sort  {
 }
 
 .catalog-item {
