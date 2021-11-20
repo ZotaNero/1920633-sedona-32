@@ -194,7 +194,7 @@ body  {
   width: 200px;
   font-size: 20px;
   line-height: 26px;
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 0 10px 10px 0;
   cursor: pointer;
 }
 
@@ -309,7 +309,7 @@ body  {
   color: #756257;
 }
 
-.navigation-link:focus  {
+.navigation-link:focus-visible  {
   color: #756257;
   box-shadow: inset 0 0 0 3px #83B3D3;
   outline: none;
@@ -557,7 +557,7 @@ body  {
   background-color: #E6E6E6;
 }
 
-.text:focus {
+.text:focus-visible {
   background-color: #E6E6E6;
   box-shadow: 0 0 0 3px #83B3D3;
 }
@@ -706,7 +706,7 @@ body  {
   margin: auto;
   padding: 62px 70px 70px 70px;
   background-color: #FFFFFF;
-  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
 }
 
@@ -786,7 +786,7 @@ body  {
   background-color: #E6E6E6;
 }
 
-.form-input:focus {
+.form-input:focus-visible {
   background-color: #E6E6E6;
   box-shadow: 0 0 0 3px #83B3D3;
   outline: none;
@@ -918,7 +918,7 @@ body  {
   width: 256px;
   box-sizing: border-box;
   background: #333333;
-  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   font-family: inherit;
   font-style: normal;
@@ -984,10 +984,10 @@ body  {
   background: #FFFFFF;
   border: 1px solid #E6E6E6;
   box-sizing: border-box;
-  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
-  right: -171px;
-  top: 47px;
+  right: -184px;
+  top: 42px;
 }
 
 .popover-content::before  {
@@ -1056,6 +1056,9 @@ body  {
   height: 36px;
   border: 0;
   opacity: 0.3;
+  background-image: url("../images/svg/bin.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: transparent;
   cursor: pointer;
 }
@@ -1079,7 +1082,7 @@ body  {
   width: 400px;
   min-height: 60px;
   background: #756257;
-  border-radius: 0px 0px 20px 20px;
+  border-radius: 0 0 20px 20px;
 }
 
 .button-popover:hover {
@@ -1156,18 +1159,18 @@ body  {
 }
 
 .breadcrumbs-link:hover {
-  fill: #FFFFFF60;
+  color: #FFFFFF60;
 }
 
 .breadcrumbs-link:focus-visible  {
-  fill: #FFFFFF60;
+  color: #FFFFFF60;
   box-shadow: 0 0 0 3px #83B3D3;
   outline: none;
   border-radius: 10px;
 }
 
 .breadcrumbs-link:active  {
-  fill: #FFFFFF30;
+  color: #FFFFFF30;
 }
 
 .catalog-sort {
@@ -1415,7 +1418,7 @@ body  {
   border-color: #FFFFFF60;
 }
 
-.catalog-filter-input:focus {
+.catalog-filter-input:focus-visible {
   border: 2px solid #FFFFFF;
   box-shadow: 0 0 0 3px #81B3D2;
   outline: none;
@@ -1466,17 +1469,17 @@ body  {
 }
 
 .range-toggle:hover {
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .range-toggle:focus-visible {
   outline: 3px solid #83B3D3;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .range-toggle:active  {
   outline: 2px solid #83B3D3;
-  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
 }
 
 .toggle-min {
@@ -1680,7 +1683,7 @@ img {
 .container  {
   width: 1200px;
   background-color: #FFFFFF;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
 }
 
